@@ -1,4 +1,8 @@
-@import "style.css";
+@import "../style.css";
+
+.container {
+    width: auto;
+}
 
 .booking {
     width: 24rem;
