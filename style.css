@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Removes default styling for html and body, sets the default font to Open Sans */
 html, body {
     margin: 0;
     padding: 0;
@@ -13,12 +14,14 @@ html, body {
     background: #dde6d9;
 
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 * {
     box-sizing: border-box;
 }
 
+/* Sets the header and label font to Nunito */
 h1,
 h2,
 h3,
@@ -27,12 +30,15 @@ label {
     margin: 0;
 }
 
+/* Nav bar */
 header {
     background: #f5f5f5;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
+
     width: 100%;
+    height: 4rem;
     box-shadow: 0 3px 5px -3px rgba(51, 51, 51, 0.2);
     z-index: 1;
 
@@ -40,13 +46,15 @@ header {
     align-items: center;
     justify-content: start;
 
+    /* To give prevent the links from moving if the title is longer or shorter */
     :first-child {
         margin-left: 1rem;
         min-width: 10rem;
     }
 
+    /* Removes the default link style and makes the clickable area larger */
     a {
-        padding: 1rem;
+        padding: 1.25rem;
         text-decoration: none;
         color: inherit;
 
@@ -59,33 +67,14 @@ header {
     }
 }
 
+/* Styling for the main container where page specific content goes */
 .container {
-    display: inline-block;
-    width: 100%;
-    max-width: calc(100vw - 16rem);
-    margin: 6rem 8rem;
+    max-width: 100%;
     padding: 2rem;
+    margin: 2rem 8rem 6rem;
+
     background: #F5F5F5;
     border-radius: 12px;
     box-shadow: 3px 3px 5px -3px rgba(51, 51, 51, 0.2);
     border: 1px solid #dadada;
-}
-
-.title {
-    font-size: 3rem;
-}
-
-.instructions {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 1px solid #dadada;
-}
-
-.content {
-    display: flex;
-
-    div {
-        width: 50%;
-        margin-right: 3rem;
-    }
 }
