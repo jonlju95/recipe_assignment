@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="booking.css">
+    <title>Booking</title>
+</head>
+<body>
+<header>
+    <h1>Booking</h1>
+    <a href="index.html">Home</a>
+    <a href="booking.html">Booking</a>
+</header>
+<main class="container">
+    <article class="booking">
+        <form class="bookingForm">
+            <fieldset>
+                <h3>Name and organisation</h3>
+                <section>
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </section>
+                <section>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </section>
+                <section>
+                    <label for="organisation">Organisation</label>
+                    <input type="text" id="organisation" name="organisation" required>
+                </section>
+            </fieldset>
+            <fieldset class="radioButtons">
+                <h3>Meal choice</h3>
+                <div>
+                    <section>
+                        <input type="radio" id="meal" name="course" value="meal" required/>
+                        <label for="meal">Meal of the day</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="soup" name="course" value="soup" required/>
+                        <label for="soup">Soup</label>
+                    </section>
+                    <section>
+                        <input type="radio" id="pasta" name="course" value="pasta" required/>
+                        <label for="pasta">Pasta</label>
+                    </section>
+                </div>
+            </fieldset>
+            <fieldset class="checkboxes">
+                <h3>Gluten intolerant?</h3>
+                <section>
+                    <label class="switch" for="gluten">
+                        <input type="checkbox" id="gluten" name="gluten" value="true"/>
+                        <span class="slider"></span>
+                    </label>
+                </section>
+            </fieldset>
+            <fieldset class="submitButton">
+                <section>
+                    <input type="submit" value="Submit"/>
+                </section>
+            </fieldset>
+        </form>
+    </article>
+</main>
+</body>
+</html>
