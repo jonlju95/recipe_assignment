@@ -4,7 +4,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
     grid-gap: 2rem;
-    max-width: calc(10rem * 10 + 18rem);
+    max-width: calc(12rem * 10 + 9 * 2rem);
+
+    margin: 0 auto;
 
     /* Styling for the actual "playing card" */
     .card {

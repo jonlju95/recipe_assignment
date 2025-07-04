@@ -10,8 +10,9 @@
     border-top: 1px solid #dadada;
 }
 
-.cardContent {
+.content {
     display: flex;
+    margin-top: 2rem;
 
     div {
         width: 50%;
